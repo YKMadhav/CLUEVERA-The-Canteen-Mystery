@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#172d3d">
+  <meta name="description" content="Solve the CLUEVERA Canteen Mystery: a playful Class 6 Data Handling investigation.">
+  <title>CLUEVERA — The Canteen Mystery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script defer src="/app.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="CLUEVERA home"><span class="brand-mark">C<span>!</span></span><span>CLUEVERA<small>THE CASE FILES OF CURIOUS MINDS</small></span></a>
+      <div class="topbar-right"><span class="case-chip">CASE 001 <i></i> CLASS 6 · MATHS</span><button class="quiet-button" id="howBtn" type="button">How to play</button></div>
+    </header>
+    <main id="app" aria-live="polite">
+      <section class="loading-card"><div class="loader"></div><p>Opening your case file…</p></section>
+    </main>
+    <footer class="footer"><span>CLUEVERA · THINK LIKE A DETECTIVE</span><span>DATA HANDLING · CLASS 6</span></footer>
+  </div>
+  <dialog id="howDialog" class="modal">
+    <form method="dialog"><button class="modal-close" aria-label="Close">×</button></form>
+    <p class="eyebrow">YOUR FIELD GUIDE</p><h2>Four stages. One smart decision.</h2>
+    <div class="how-list">
+      <div><b>01 · LOOK</b><p>Examine evidence. Separate facts from opinions and distractions.</p></div>
+      <div><b>02 · COUNT</b><p>Sort all 40 votes, tally each food, and check the total.</p></div>
+      <div><b>03 · DRAW</b><p>Choose a fair scale and build a bar graph that tells the truth.</p></div>
+      <div><b>04 · DECIDE</b><p>Test the claims. Recommend a plan using evidence, not guesses.</p></div>
+    </div>
+    <p class="modal-note">There are no speed points. Hints are free, and fixing a mistake is part of being a good detective.</p>
+    <button class="primary-button full" id="modalGotIt" type="button">Got it, let's investigate</button>
+  </dialog>
+</body>
+</html>
